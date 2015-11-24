@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entry</title>
+</head>
+<body>
+<h1>Entry!!!</h1>
+<script type="text/javascript">
+    function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+
+
+    //httpGet("http://localhost:3000");
+    window.location = "http://localhost:3000";
+</script>
+</body>
+</html>
